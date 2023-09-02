@@ -20,11 +20,17 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
 </head>
 
 <body>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="assets/images/logo.png" alt="Pokedex" class="logo">
+        </a>
+    </header>
+
     <section class="content">
-        <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -37,10 +43,20 @@
         </div>
     </section>
 
-    <!-- Nosso JS -->
+    <div id="my-modal" class="modal">
+        <div class='center'>
+            <div id="modalContent" class="modalContent">
+                <div id="pokemonListDetails" class="pokemonsModal">
+                    <!-- Pokemon details here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="/assets/js/modal.js"></script>
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
-
 </html>

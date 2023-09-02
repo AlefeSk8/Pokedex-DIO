@@ -1,0 +1,187 @@
+.closeButton {
+  color: #404040;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #991b1b;
+}
+
+#divCloseButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#divCloseButton span {
+  color: #ffffff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modalContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemonsModal {
+  width: 100%;
+}
+
+.pokemonOpen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5em 2.5em 2fr;
+  margin: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.typesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.types {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.nameOpen {
+  justify-self: flex-start;
+  color: #fff;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+  font-size: 1.8em;
+}
+
+.divSkills {
+  display: flex;
+}
+
+.numberModal {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.skillOpen {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0.01rem;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  justify-content: center;
+  filter: brightness(1.1);
+  text-align: center;
+}
+
+.typesOpen {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.openType {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+}
+
+.pokemonImageOpenContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemonImage {
+  max-width: 100%;
+  height: 150px;
+}
+
+.attributesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.attributesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.innerAttribute {
+  gap: 0.5em;
+}
+
+@media screen and (min-width: 475px) {
+  .pokemonsModal {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 517px) {
+  .pokemonsModal {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 557px) {
+  .pokemonsModal {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 606px) {
+  .pokemonsModal {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 657px) {
+  .pokemonsModal {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 725px) {
+  .pokemonsModal {
+    width: auto;
+  }
+}
