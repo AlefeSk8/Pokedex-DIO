@@ -12,6 +12,8 @@
 Open **index.html** or start live server on Visual Studio Code.
 <br />
 
+Deployed on vercel: https://pokedex-o8rtfii6z-alefesk8s-projects.vercel.app/
+
 ## Technologies
 
 -   [ ] HTML
